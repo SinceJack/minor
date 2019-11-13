@@ -12,7 +12,7 @@ class NewsController extends Controller
     public function index()
     {
         //获取所有新闻
-        $news = News::withCount('comments')->get();
+        $news = News::withCount('comments')->paginate(4);
 
         return view('news/index', compact('news'));
     }

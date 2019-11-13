@@ -153,7 +153,8 @@ return [
     'upload' => [
 
         // Disk in `config/filesystem.php`.
-        'disk' => 'admin',
+        //'disk' => 'admin',
+	'disk'	=>  'qiniu',
 
         // Image and file upload path under the disk above.
         'directory' => [
@@ -299,7 +300,7 @@ return [
     | This value is used to set the background image of login page.
     |
     */
-    'login_background_image' => 'https://cn.bing.com/th?id=OHR.AlbertaThanksgiving_ZH-CN5899007960_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp',
+    'login_background_image' => 'https://cn.bing.com/th?id=OHR.CorkTrees_ZH-CN1253123792_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp',
 
     /*
     |--------------------------------------------------------------------------

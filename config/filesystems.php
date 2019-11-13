@@ -70,6 +70,13 @@ return [
 //            'url' => env('APP_URL').'/public/upload',
             'url' => env('APP_URL').'/public/upload',
         ],
+	'qiniu' => [
+    	    'driver'     => 'qiniu',
+    	    'access_key' => env('QINIU_ACCESS_KEY', 'rEbsOxgRlvM3TuzTdbhjs_y1VQzNKFZKFJMUGbS0'),
+    	    'secret_key' => env('QINIU_SECRET_KEY', 'vbRF1OW5Xws0KKf20unVxKpnjcfNuL_F5Eyz9_vE'),
+    	    'bucket'     => env('QINIU_BUCKET', 'minor'),
+    	    'domain'     => env('QINIU_DOMAIN', 'cdn.iminor.com'), // or host: https://xxxx.clouddn.com
+	],
     ],
 
 ];

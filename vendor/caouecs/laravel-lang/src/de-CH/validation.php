@@ -92,6 +92,7 @@ return [
     'not_in'               => 'Der gewählte Wert für :attribute ist ungültig.',
     'not_regex'            => ':attribute hat ein ungültiges Format.',
     'numeric'              => ':attribute muss eine Zahl sein.',
+    'password'             => 'Das Passwort ist falsch.',
     'present'              => ':attribute muss vorhanden sein.',
     'regex'                => ':attribute Format ist ungültig.',
     'required'             => ':attribute muss ausgefüllt sein.',
@@ -114,7 +115,7 @@ return [
     'unique'               => ':attribute ist schon vergeben.',
     'uploaded'             => ':attribute konnte nicht hochgeladen werden.',
     'url'                  => ':attribute muss eine URL sein.',
-    'uuid'                 => 'attribute muss ein UUID sein.',
+    'uuid'                 => ':attribute muss ein UUID sein.',
 
     /*
     |--------------------------------------------------------------------------

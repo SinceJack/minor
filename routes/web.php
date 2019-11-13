@@ -18,6 +18,13 @@
 //注册前台路由组
 Route::prefix('/')->group(function(){
 
+    //用户详情
+    Route::get('/userinfo', 'UserinfoController@create');
+    Route::post('/userinfo', 'UserinfoController@store');
+
+    //用户合同
+    Route::get('/usercontract/{id}', 'UserinfoController@contract');
+
     //首页路由
     Route::get('/', 'IndexController@index');
 

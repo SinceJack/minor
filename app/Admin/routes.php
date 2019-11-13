@@ -31,4 +31,7 @@ Route::group([
     $router->resource('programContent', ProgramContentController::class);
 
     $router->resource('contact', ContactController::class);
+
+    $router->resource('userinfo', UserInfoController::class);
+
 });

@@ -41,7 +41,7 @@
                         <div class="lower-content">
                             <span class="date">活动开始时间：{{$event->evetime}}</span>
                             <h3>{{$event->evetitle}}</h3>
-                            {{$event->evecontent}}
+                            {!! $event->evecontent !!}
                         </div>
 
                         <!-- Other Option -->
@@ -65,7 +65,7 @@
                          <!-- Author Box -->
                         <div class="author-box">
                             <div class="inner-box">
-                                <div class="image-box"><img src="/images/resource/author-img.jpg" alt=""></div>
+                                <div class="image-box"><img src="/images/resource/team-1.jpg" alt=""></div>
                                 <h3 class="name">组织者</h3>
                                 <p>极地国际创新中心团队。</p>
                                 <ul class="contact-info">

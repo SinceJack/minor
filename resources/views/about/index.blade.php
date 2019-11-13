@@ -28,10 +28,10 @@
             <div class="upper-box">
                 <div class="row">
                     <div class="image-column col-lg-6 col-md-12 col-sm-12 wow fadeInLeft">
-                        <figure class="image"><img src="/images/resource/about-img-3.jpg" alt=""></figure>
+                        <figure class="image"><img src="http://i2.tiimg.com/703561/3178ebc4e761e920.jpg" alt=""></figure>
                     </div>
                     <div class="image-column col-lg-6 col-md-12 col-sm-12 wow fadeInRight">
-                        <figure class="image"><img src="/images/resource/about-img-4.jpg" alt=""></figure>
+                        <figure class="image"><img src="http://i2.tiimg.com/703561/465da69bfa33b54a.jpg" alt=""></figure>
                     </div>
                 </div>
             </div>
@@ -90,8 +90,8 @@
     <section class="testimonial-section">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <div class="title">看看别人的评价</div>
-                <h2>怎么说</h2>
+                <div class="title">大家的评价</div>
+                <h2>看看她/他们怎么说</h2>
             </div>
 
             <div class="testimonial-carousel owl-carousel owl-theme">
@@ -115,6 +115,7 @@
     </section>
     <!--End Testimonial Section -->
 
+
     <!-- Team Section -->
     <section class="team-section">
         <div class="auto-container">
@@ -131,14 +132,14 @@
                             <figure class="image"><img src="/images/resource/team-1.jpg" alt=""></figure>
                             <div class="overlay-box">
                                 <ul class="social-icon-colored">
-{{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
-                                    <li><a href="https://weibo.com/3197043375/profile?topnav=1&wvr=6&is_all=1"><span class="fab fa-weibo"></span></a></li>
-{{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
+                                    {{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
+                                    <li><a href="https://weibo.com/minor127"><span class="fab fa-weibo"></span></a></li>
+                                    {{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
                                 </ul>
                             </div>
                         </div>
                         <div class="caption-box">
-                            <h6 class="name"><a href="https://weibo.com/3197043375/profile?topnav=1&wvr=6&is_all=1">@minor</a></h6>
+                            <h6 class="name"><a href="https://weibo.com/minor127">@minor</a></h6>
                             <span class="designation">插画与绘本老师</span>
                         </div>
                     </div>
@@ -151,9 +152,9 @@
                             <figure class="image"><img src="/images/resource/team-2.jpg" alt=""></figure>
                             <div class="overlay-box">
                                 <ul class="social-icon-colored">
-{{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
+                                    {{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
                                     <li><a href="https://weibo.com/minorart"><span class="fab fa-weibo"></span></a></li>
-{{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
+                                    {{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
                                 </ul>
                             </div>
                         </div>
@@ -171,14 +172,14 @@
                             <figure class="image"><img src="/images/resource/team-3.jpg" alt=""></figure>
                             <div class="overlay-box">
                                 <ul class="social-icon-colored">
-{{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
-                                    <li><a href="https://weibo.com/p/1005056682328884/home?from=page_100505_profile&wvr=6&mod=data&is_all=1#place"><span class="fab fa-weibo"></span></a></li>
-{{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
+                                    {{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
+                                    <li><a href="https://weibo.com/p/1005056682328884"><span class="fab fa-weibo"></span></a></li>
+                                    {{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
                                 </ul>
                             </div>
                         </div>
                         <div class="caption-box">
-                            <h6 class="name"><a href="https://weibo.com/p/1005056682328884/home?from=page_100505_profile&wvr=6&mod=data&is_all=1#place">@flyer</a></h6>
+                            <h6 class="name"><a href="https://weibo.com/p/1005056682328884">@flyer</a></h6>
                             <span class="designation">技术老师</span>
                         </div>
                     </div>
@@ -191,14 +192,14 @@
                             <figure class="image"><img src="/images/resource/team-4.jpg" alt=""></figure>
                             <div class="overlay-box">
                                 <ul class="social-icon-colored">
-{{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
-                                    <li><a href="https://weibo.com/5995932024/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1"><span class="fab fa-weibo"></span></a></li>
-{{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
+                                    {{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
+                                    <li><a href="https://weibo.com/u/5995932024"><span class="fab fa-weibo"></span></a></li>
+                                    {{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
                                 </ul>
                             </div>
                         </div>
                         <div class="caption-box">
-                            <h6 class="name"><a href="https://weibo.com/5995932024/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1">@saige</a></h6>
+                            <h6 class="name"><a href="https://weibo.com/u/5995932024">@saige</a></h6>
                             <span class="designation">运营老师</span>
                         </div>
                     </div>
@@ -207,6 +208,7 @@
         </div>
     </section>
     <!--End Team Section -->
+
 
     <!-- Call To Action -->
     <section class="call-to-action">
@@ -253,7 +255,7 @@
                                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                                     <div class="inner-column">
                                         <div class="image-box">
-                                            <figure class="image"><img src="/images/resource/image-3.jpg" alt=""></figure>
+                                            <figure class="image"><img src="http://i2.tiimg.com/703561/01f94d65f4860bbf.jpg" alt=""></figure>
                                         </div>
                                     </div>
                                 </div>
@@ -280,7 +282,7 @@
                                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                                     <div class="inner-column">
                                         <div class="image-box">
-                                            <figure class="image"><img src="/images/resource/image-2.jpg" alt=""></figure>
+                                            <figure class="image"><img src="http://i2.tiimg.com/703561/92953d492ec75cae.jpg" alt=""></figure>
                                         </div>
                                     </div>
                                 </div>
@@ -306,7 +308,7 @@
                                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                                     <div class="inner-column">
                                         <div class="image-box">
-                                            <figure class="image"><img src="/images/resource/image-1.jpg" alt=""></figure>
+                                            <figure class="image"><img src="http://i2.tiimg.com/703561/9de241c57e8eed60.jpg" alt=""></figure>
                                         </div>
                                     </div>
                                 </div>

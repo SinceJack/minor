@@ -41,6 +41,7 @@
                     </div>
                 @endforeach
             </div>
+            {{ $gals->links() }}
         </div>
     </section>
     <!--End Gallery Section -->

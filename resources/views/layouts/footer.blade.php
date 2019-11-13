@@ -23,7 +23,7 @@
                         <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                             <div class="footer-widget logo-widget">
                                 <div class="logo">
-                                    <a href="index.html"><img src="/images/footer-logo.png" alt="" /></a>
+                                    <a href="/"><img src="http://i1.fuimg.com/703561/9272ad9d4950c81f.png" alt="" /></a>
                                 </div>
                                 <div class="text">美萌创艺工作室，一个创造美与萌的神奇工作室，在这里和我们一起畅想……</div>
 
@@ -36,7 +36,7 @@
                                 <h4 class="widget-title">联系我们</h4>
                                 <div class="widget-content">
                                     <ul class="contact-info">
-                                        <li><a href="tel:15910381201"><span class="fa fa-phone-square"></span>159 1038 1201</a></li>
+                                        <li><a href="tel:19110375125"><span class="fa fa-phone-square"></span>191 1037 5125</a></li>
                                         <li><a href="mailto:739019620@qq.com"><span class="fa fa-envelope"></span>739019620@qq.com</a></li>
                                         <li><span class="fa fa-map"></span> 北京市朝阳区798艺术区极地国际创新中心3楼</li>
                                     </ul>

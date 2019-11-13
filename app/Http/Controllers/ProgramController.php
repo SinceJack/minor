@@ -12,9 +12,12 @@ class ProgramController extends Controller
     public function index()
     {
         //获得公开课
-        $pros = Program::get();
+        $pros = Program::orderBy('created_at','desc')->paginate(4);
 
-        return view('program/index',compact('pros'));
+        //即将开始的公开课
+        $first = Program::select('protitle','protime')->orderBy('protime', 'desc')->limit(1)->first();
+
+        return view('program/index',compact('pros', 'first'));
     }
 
     public function show(Program $program)

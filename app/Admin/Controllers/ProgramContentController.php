@@ -67,7 +67,7 @@ class ProgramContentController extends AdminController
     {
         $form = new Form(new ProgramContent);
         //TODO:公开课select列表的查询还没有实现
-        $form->select('program_id', __('公开课名称'));
+        $form->text('program_id', __('公开课名称'));
         $form->text('title', __('标题'));
         $form->text('intro', __('简介'));
         $form->image('picture', __('图片'));

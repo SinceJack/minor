@@ -8,6 +8,8 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
 
     <title>美萌 - 为生活创造美</title>
+    <meta name="keywords" content="美萌"/>
+    <meta name="description" content="美萌,minor,art,艺术,创作,插画,儿童插画,儿插,商插,在线课程,二维码,艺术二维码,艺术新闻,美萌，一个集美与萌于一身的部落，这是一个可以让你的心灵停靠的港湾……"/>
 
     <!-- 高德地图样式链接 -->
     <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
@@ -38,7 +40,7 @@
 
 <div class="page-wrapper">
     <!-- Preloader -->
-    <div class="preloader"></div>
+    <!-- <div class="preloader"></div> -->
     <script>
         alert($);
     </script>
@@ -51,7 +53,7 @@
                     <!-- 联系方式 -->
                     <div class="top-left">
                         <ul class="info-list clearfix">
-                            <li><a href="tel:15910381201"><span class="fa fa-phone-square"></span> 159 1038 1201</a></li>
+                            <li><a href="tel:19110375125"><span class="fa fa-phone-square"></span> 191 1037 5125</a></li>
                             <li><a href="mailto:739019620@qq.com"><span class="fa fa-envelope"></span>739019620@qq.com</a></li>
                         </ul>
                     </div>
@@ -66,12 +68,23 @@
         </div>
         <!-- 导航条结束 -->
 
+
+        @if (session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @else
+            <div class="alert alert-error">
+                {{ session('error') }}
+            </div>
+        @endif
+
         <!-- logo导航条开始 -->
         <div class="header-lower">
             <div class="auto-container clearfix">
                 <!--Info-->
                 <div class="logo-outer">
-                    <div class="logo"><a href="index.html"><img src="/images/logo.png" alt="" title=""></a></div>
+                    <div class="logo"><a href="/"><img src="/images/logo.png" alt="" title=""></a></div>
                 </div>
 
                 <!--Nav Box-->
@@ -87,12 +100,12 @@
 
                         <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="current"><a href="/">主页</a></li>
-                                <li class="dropdown"><a href="/about">关于我们</a></li>
-                                <li class="dropdown"><a href="/events">大事记</a></li>
-                                <li class="dropdown"><a href="/programs">公开课</a></li>
-                                <li class="dropdown"><a href="/gallery">画廊</a></li>
-                                <li class="dropdown"><a href="/news">新鲜事儿</a></li>
+                                <li class="current"><a href="/">首页 ❤</a></li>
+                                <li class="dropdown"><a href="/about">关于 ✰</a></li>
+                                <li class="dropdown"><a href="/events">事记 ☾</a></li>
+                                <li class="dropdown"><a href="/programs">课程 ♪</a></li>
+                                <li class="dropdown"><a href="/gallery">画廊 (˘͈ᵕ ˘͈❀)</a></li>
+                                <li class="dropdown"><a href="/news">新闻 ( ᵒ̴̶̷̤໐ᵒ̴̶̷̤ )</a></li>
 {{--                                <li class="dropdown"><a href="/contact">联系我们</a></li>--}}
                             </ul>
                         </div>
@@ -117,7 +130,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" title=""><img src="/images/logo.png" alt="" title=""></a>
+                    <a href="/" title=""><img src="/images/logo.png" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -125,12 +138,12 @@
                     <nav class="main-menu">
                         <div class="navbar-collapse show collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="current"><a href="/">主页</a></li>
-                                <li class="dropdown"><a href="/about">关于我们</a></li>
-                                <li class="dropdown"><a href="/events">大事记</a></li>
-                                <li class="dropdown"><a href="/programs">公开课</a></li>
-                                <li class="dropdown"><a href="/gallery">画廊</a></li>
-                                <li class="dropdown"><a href="/news">新鲜事儿</a></li>
+                                <li class="current"><a href="/">首页 ❤</a></li>
+                                <li class="dropdown"><a href="/about">关于 ✰</a></li>
+                                <li class="dropdown"><a href="/events">事记 ☾</a></li>
+                                <li class="dropdown"><a href="/programs">课程 ♪</a></li>
+                                <li class="dropdown"><a href="/gallery">画廊 (˘͈ᵕ ˘͈❀)</a></li>
+                                <li class="dropdown"><a href="/news">新闻 ( ᵒ̴̶̷̤໐ᵒ̴̶̷̤ )</a></li>
 {{--                                <li class="dropdown"><a href="/contact">联系我们</a></li>--}}
                             </ul>
                         </div>
@@ -147,322 +160,171 @@
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                 <ul>
                     <!-- Slide 1 -->
+                @foreach($ads as $ad)
                     <li data-transition="parallaxvertical" data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1681" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="/images/main-slider/4.jpg">
 
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="/images/main-slider/4.jpg">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="/upload/{{$ad->adimg}}">
 
-                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-4"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-width="none"
-                             data-hoffset="['-80','15','15','15']"
-                             data-voffset="['30','0','0','0']"
-                             data-x="['left','left','left','left']"
-                             data-y="['top','top','top','top']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <span class="icon icon-sun-2"></span>
-                        </div>
-
-
-                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-3"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-width="none"
-                             data-hoffset="['-255','15','15','15']"
-                             data-voffset="['175','0','0','0']"
-                             data-x="['left','left','left','left']"
-                             data-y="['top','top','top','top']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <span class="icon icon-star"></span>
-                        </div>
-
-                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-3"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-width="none"
-                             data-hoffset="['440','15','15','15']"
-                             data-voffset="['105','0','0','0']"
-                             data-x="['left','left','left','left']"
-                             data-y="['top','top','top','top']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <span class="icon icon-star-4"></span>
-                        </div>
-
-                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-4"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-width="none"
-                             data-hoffset="['150','15','15','15']"
-                             data-voffset="['40','0','0','0']"
-                             data-x="['right','right','right','right']"
-                             data-y="['top','top','top','top']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <span class="icon icon-idea"></span>
-                        </div>
-
-                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-5"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-width="none"
-                             data-hoffset="['-360','15','15','15']"
-                             data-voffset="['150','0','0','0']"
-                             data-x="['left','left','left','left']"
-                             data-y="['bottom','bottom','bottom','bottom']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <span class="icon icon-pencil"></span>
-                        </div>
-
-                        <div class="tp-caption"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-width="['650','650','670','400']"
-                             data-whitespace="normal"
-                             data-hoffset="['15','15','15','15']"
-                             data-voffset="['-185','-180','-140','-210']"
-                             data-x="['left','left','left','left']"
-                             data-y="['middle','middle','middle','middle']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <div class="title">Iminor.art & Creative Together</div>
-                        </div>
-
-                        <div class="tp-caption"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-width="['650','730','650','400']"
-                             data-whitespace="normal"
-                             data-hoffset="['15','15','15','15']"
-                             data-voffset="['-25','-25','-25','-25']"
-                             data-x="['left','left','left','left']"
-                             data-y="['middle','middle','middle','middle']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <h2>让我们一起创造美丽的萌物</h2>
-                        </div>
-
-                        <div class="tp-caption tp-resizeme"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="normal"
-                             data-width="['650','650','650','400']"
-                             data-hoffset="['15','15','15','15']"
-                             data-voffset="['190','190','130','190']"
-                             data-x="['left','left','left','left']"
-                             data-y="['middle','middle','middle','middle']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <div class="link-box"><a href="/about" class="theme-btn btn-style-one">MORE</a></div>
-                        </div>
                     </li>
-
+                @endforeach
                     <!-- Slide 2 -->
-                    <li data-transition="parallaxvertical" data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1682" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="/images/main-slider/4.jpg">
+{{--                    <li data-transition="parallaxvertical" data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1682" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="/images/main-slider/4.jpg">--}}
 
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="/images/main-slider/3.jpg">
+{{--                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="/images/main-slider/3.jpg">--}}
 
-                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-4"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-width="none"
-                             data-hoffset="['-80','15','15','15']"
-                             data-voffset="['30','0','0','0']"
-                             data-x="['left','left','left','left']"
-                             data-y="['top','top','top','top']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <span class="icon icon-sun-2"></span>
-                        </div>
+{{--                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-4"--}}
+{{--                             data-paddingbottom="[0,0,0,0]"--}}
+{{--                             data-paddingleft="[0,0,0,0]"--}}
+{{--                             data-paddingright="[0,0,0,0]"--}}
+{{--                             data-paddingtop="[0,0,0,0]"--}}
+{{--                             data-responsive_offset="on"--}}
+{{--                             data-type="text"--}}
+{{--                             data-height="none"--}}
+{{--                             data-whitespace="nowrap"--}}
+{{--                             data-width="none"--}}
+{{--                             data-hoffset="['-80','15','15','15']"--}}
+{{--                             data-voffset="['30','0','0','0']"--}}
+{{--                             data-x="['left','left','left','left']"--}}
+{{--                             data-y="['top','top','top','top']"--}}
+{{--                             data-textalign="['top','top','top','top']"--}}
+{{--                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>--}}
+{{--                            <span class="icon icon-sun-2"></span>--}}
+{{--                        </div>--}}
 
 
-                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-3"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-width="none"
-                             data-hoffset="['-255','15','15','15']"
-                             data-voffset="['175','0','0','0']"
-                             data-x="['left','left','left','left']"
-                             data-y="['top','top','top','top']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <span class="icon icon-star"></span>
-                        </div>
+{{--                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-3"--}}
+{{--                             data-paddingbottom="[0,0,0,0]"--}}
+{{--                             data-paddingleft="[0,0,0,0]"--}}
+{{--                             data-paddingright="[0,0,0,0]"--}}
+{{--                             data-paddingtop="[0,0,0,0]"--}}
+{{--                             data-responsive_offset="on"--}}
+{{--                             data-type="text"--}}
+{{--                             data-height="none"--}}
+{{--                             data-whitespace="nowrap"--}}
+{{--                             data-width="none"--}}
+{{--                             data-hoffset="['-255','15','15','15']"--}}
+{{--                             data-voffset="['175','0','0','0']"--}}
+{{--                             data-x="['left','left','left','left']"--}}
+{{--                             data-y="['top','top','top','top']"--}}
+{{--                             data-textalign="['top','top','top','top']"--}}
+{{--                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>--}}
+{{--                            <span class="icon icon-star"></span>--}}
+{{--                        </div>--}}
 
-                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-3"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-width="none"
-                             data-hoffset="['440','15','15','15']"
-                             data-voffset="['105','0','0','0']"
-                             data-x="['left','left','left','left']"
-                             data-y="['top','top','top','top']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <span class="icon icon-star-4"></span>
-                        </div>
+{{--                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-3"--}}
+{{--                             data-paddingbottom="[0,0,0,0]"--}}
+{{--                             data-paddingleft="[0,0,0,0]"--}}
+{{--                             data-paddingright="[0,0,0,0]"--}}
+{{--                             data-paddingtop="[0,0,0,0]"--}}
+{{--                             data-responsive_offset="on"--}}
+{{--                             data-type="text"--}}
+{{--                             data-height="none"--}}
+{{--                             data-whitespace="nowrap"--}}
+{{--                             data-width="none"--}}
+{{--                             data-hoffset="['440','15','15','15']"--}}
+{{--                             data-voffset="['105','0','0','0']"--}}
+{{--                             data-x="['left','left','left','left']"--}}
+{{--                             data-y="['top','top','top','top']"--}}
+{{--                             data-textalign="['top','top','top','top']"--}}
+{{--                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>--}}
+{{--                            <span class="icon icon-star-4"></span>--}}
+{{--                        </div>--}}
 
-                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-4"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-width="none"
-                             data-hoffset="['150','15','15','15']"
-                             data-voffset="['40','0','0','0']"
-                             data-x="['right','right','right','right']"
-                             data-y="['top','top','top','top']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <span class="icon icon-idea"></span>
-                        </div>
+{{--                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-4"--}}
+{{--                             data-paddingbottom="[0,0,0,0]"--}}
+{{--                             data-paddingleft="[0,0,0,0]"--}}
+{{--                             data-paddingright="[0,0,0,0]"--}}
+{{--                             data-paddingtop="[0,0,0,0]"--}}
+{{--                             data-responsive_offset="on"--}}
+{{--                             data-type="text"--}}
+{{--                             data-height="none"--}}
+{{--                             data-whitespace="nowrap"--}}
+{{--                             data-width="none"--}}
+{{--                             data-hoffset="['150','15','15','15']"--}}
+{{--                             data-voffset="['40','0','0','0']"--}}
+{{--                             data-x="['right','right','right','right']"--}}
+{{--                             data-y="['top','top','top','top']"--}}
+{{--                             data-textalign="['top','top','top','top']"--}}
+{{--                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>--}}
+{{--                            <span class="icon icon-idea"></span>--}}
+{{--                        </div>--}}
 
-                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-5"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-width="none"
-                             data-hoffset="['-360','15','15','15']"
-                             data-voffset="['150','0','0','0']"
-                             data-x="['left','left','left','left']"
-                             data-y="['bottom','bottom','bottom','bottom']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <span class="icon icon-pencil"></span>
-                        </div>
+{{--                        <div class="tp-caption tp-resizeme big-ipad-hidden tp-shape tp-shapewrapper rs-parallaxlevel-5"--}}
+{{--                             data-paddingbottom="[0,0,0,0]"--}}
+{{--                             data-paddingleft="[0,0,0,0]"--}}
+{{--                             data-paddingright="[0,0,0,0]"--}}
+{{--                             data-paddingtop="[0,0,0,0]"--}}
+{{--                             data-responsive_offset="on"--}}
+{{--                             data-type="text"--}}
+{{--                             data-height="none"--}}
+{{--                             data-whitespace="nowrap"--}}
+{{--                             data-width="none"--}}
+{{--                             data-hoffset="['-360','15','15','15']"--}}
+{{--                             data-voffset="['150','0','0','0']"--}}
+{{--                             data-x="['left','left','left','left']"--}}
+{{--                             data-y="['bottom','bottom','bottom','bottom']"--}}
+{{--                             data-textalign="['top','top','top','top']"--}}
+{{--                             data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>--}}
+{{--                            <span class="icon icon-pencil"></span>--}}
+{{--                        </div>--}}
 
-                        <div class="tp-caption"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-width="['650','650','670','400']"
-                             data-whitespace="normal"
-                             data-hoffset="['15','15','15','15']"
-                             data-voffset="['-185','-180','-140','-210']"
-                             data-x="['left','left','left','left']"
-                             data-y="['middle','middle','middle','middle']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <div class="title">Iminor.art & Creative Together</div>
-                        </div>
+{{--                        <div class="tp-caption"--}}
+{{--                             data-paddingbottom="[0,0,0,0]"--}}
+{{--                             data-paddingleft="[0,0,0,0]"--}}
+{{--                             data-paddingright="[0,0,0,0]"--}}
+{{--                             data-paddingtop="[0,0,0,0]"--}}
+{{--                             data-responsive_offset="on"--}}
+{{--                             data-type="text"--}}
+{{--                             data-height="none"--}}
+{{--                             data-width="['650','650','670','400']"--}}
+{{--                             data-whitespace="normal"--}}
+{{--                             data-hoffset="['15','15','15','15']"--}}
+{{--                             data-voffset="['-185','-180','-140','-210']"--}}
+{{--                             data-x="['left','left','left','left']"--}}
+{{--                             data-y="['middle','middle','middle','middle']"--}}
+{{--                             data-textalign="['top','top','top','top']"--}}
+{{--                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>--}}
+{{--                            <div class="title">Iminor.art & Creative Together</div>--}}
+{{--                        </div>--}}
 
-                        <div class="tp-caption"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-width="['650','730','650','400']"
-                             data-whitespace="normal"
-                             data-hoffset="['15','15','15','15']"
-                             data-voffset="['-25','-25','-25','-25']"
-                             data-x="['left','left','left','left']"
-                             data-y="['middle','middle','middle','middle']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <h2>让每一天都充满希望与热情</h2>
-                        </div>
+{{--                        <div class="tp-caption"--}}
+{{--                             data-paddingbottom="[0,0,0,0]"--}}
+{{--                             data-paddingleft="[0,0,0,0]"--}}
+{{--                             data-paddingright="[0,0,0,0]"--}}
+{{--                             data-paddingtop="[0,0,0,0]"--}}
+{{--                             data-responsive_offset="on"--}}
+{{--                             data-type="text"--}}
+{{--                             data-height="none"--}}
+{{--                             data-width="['650','730','650','400']"--}}
+{{--                             data-whitespace="normal"--}}
+{{--                             data-hoffset="['15','15','15','15']"--}}
+{{--                             data-voffset="['-25','-25','-25','-25']"--}}
+{{--                             data-x="['left','left','left','left']"--}}
+{{--                             data-y="['middle','middle','middle','middle']"--}}
+{{--                             data-textalign="['top','top','top','top']"--}}
+{{--                             data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>--}}
+{{--                            <h2 style="font-weight: bold;">让每一天都充满希望与热情</h2>--}}
+{{--                        </div>--}}
 
-                        <div class="tp-caption tp-resizeme"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingtop="[0,0,0,0]"
-                             data-responsive_offset="on"
-                             data-type="text"
-                             data-height="none"
-                             data-whitespace="normal"
-                             data-width="['650','650','650','400']"
-                             data-hoffset="['15','15','15','15']"
-                             data-voffset="['190','190','130','190']"
-                             data-x="['left','left','left','left']"
-                             data-y="['middle','middle','middle','middle']"
-                             data-textalign="['top','top','top','top']"
-                             data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <div class="link-box"><a href="/about" class="theme-btn btn-style-one">MORE</a></div>
-                        </div>
-                    </li>
+{{--                        <div class="tp-caption tp-resizeme"--}}
+{{--                             data-paddingbottom="[0,0,0,0]"--}}
+{{--                             data-paddingleft="[0,0,0,0]"--}}
+{{--                             data-paddingright="[0,0,0,0]"--}}
+{{--                             data-paddingtop="[0,0,0,0]"--}}
+{{--                             data-responsive_offset="on"--}}
+{{--                             data-type="text"--}}
+{{--                             data-height="none"--}}
+{{--                             data-whitespace="normal"--}}
+{{--                             data-width="['650','650','650','400']"--}}
+{{--                             data-hoffset="['15','15','15','15']"--}}
+{{--                             data-voffset="['190','190','130','190']"--}}
+{{--                             data-x="['left','left','left','left']"--}}
+{{--                             data-y="['middle','middle','middle','middle']"--}}
+{{--                             data-textalign="['top','top','top','top']"--}}
+{{--                             data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>--}}
+{{--                            <div class="link-box"><a href="/about" class="theme-btn btn-style-one">MORE</a></div>--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
                 </ul>
             </div>
         </div>
@@ -504,8 +366,8 @@
                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner-column">
                         <div class="image-box">
-                            <figure class="image wow fadeInLeft"><img src="/images/resource/about-img-1.jpg" alt=""></figure>
-                            <figure class="image2 wow fadeInRight"><img src="/images/resource/about-img-2.jpg" alt=""></figure>
+                            <figure class="image wow fadeInLeft"><img src="http://i2.tiimg.com/703561/bc3acbabe07089c8.jpg" alt=""></figure>
+                            <figure class="image2 wow fadeInRight"><img src="http://i2.tiimg.com/703561/fdbcadfd9926afb6.jpg" alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -518,8 +380,8 @@
     <section class="program-section">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <span class="title">选择你喜欢的</span>
-                <h2>我们正在做</h2>
+                <span class="title">我们的课程</span>
+                <h2>最新的课程</h2>
             </div>
 
             <div class="row">
@@ -528,11 +390,11 @@
                 <div class="program-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="numbers-matching.html"><img src="/upload/{{$pro->proimg}}" alt=""></a></figure>
+                            <figure class="image"><a href="/programs/{{$pro->id}}"><img src="/upload/{{$pro->proimg}}" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
-                            <h4><a href="numbers-matching.html">{{$pro->protitle}}</a></h4>
-                            <div class="text">{{$pro->prointro}}</div>
+                            <h4><a href="/programs/{{$pro->id}}">{{$pro->protitle}}</a></h4>
+                            <div class="text">{!! $pro->prointro !!}</div>
                             <ul class="program-info">
 {{--                                <li><span>地点:</span> {{$pro->}}</li>--}}
                                 <li><span>时间:</span> {{$pro->protime}}</li>
@@ -554,8 +416,8 @@
     <section class="events-section">
         <div class="auto-container">
             <div class="sec-title light text-center">
-                <span class="title">即将举行的活动</span>
-                <h2>快来加入我们把</h2>
+                <span class="title">我们的大事记</span>
+                <h2>快来看看我们最近搞了哪些事情</h2>
             </div>
 
             <div class="row">
@@ -596,12 +458,17 @@
         </div>
         <div class="auto-container">
             <div class="sec-title light text-center">
-                <span class="title">立即预定你的座位</span>
-                <h2>即将到来的活动</h2>
+                <span class="title">立即预定你的位置</span>
+                <h2>{{$first->protitle}}</h2>
             </div>
 
             <div class="content">
-                <div class="time-counter"><div class="time-countdown clearfix" data-countdown="2019/10/31"></div></div>
+                <div class="time-counter" style="color:white;font-size:30px;color:#ffae00;">{{$first->protime}}</div>
+            </div>
+            <br>
+            <br>
+            <div class="btn-box text-center">
+                <a href="/programs/{{$first->id}}" class="theme-btn btn-style-one">MORE</a>
             </div>
         </div>
     </section>
@@ -611,8 +478,8 @@
     <section class="testimonial-section alternate">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <div class="title">看看别人的评价</div>
-                <h2>怎么说</h2>
+                <div class="title">大家的评价</div>
+                <h2>看看她/他们怎么说</h2>
             </div>
 
             <div class="testimonial-carousel owl-carousel owl-theme">
@@ -625,8 +492,8 @@
                         </div>
                         <div class="info-box">
                             <div class="thumb"><img src="/upload/{{$ping->appimg}}" alt=""></div>
-                            <h6 class="name">{{$ping->appname}}</h6>
-                            <span class="designation">{{$ping->appjob}}</span>
+                            <h6 class="name">{{$ping->apprname}}</h6>
+                            <span class="designation">{{$ping->apprjob}}</span>
                         </div>
                     </div>
                 </div>
@@ -649,13 +516,14 @@
         <div class="auto-container">
             <div class="content-box">
                 <span class="title">想要了解更多？</span>
-                <h2>拨打我们的联系电话 15910381201</h2>
+                <h2>拨打我们的联系电话 19110375125</h2>
                 <div class="btn-box"><a href="/about" class="theme-btn btn-style-two">MORE</a></div>
             </div>
         </div>
     </section>
     <!--End Call To Action -->
 
+    <!-- Team Section -->
     <section class="team-section">
         <div class="auto-container">
             <div class="sec-title text-center">
@@ -668,17 +536,17 @@
                 <div class="team-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="/images/resource/team-1.jpg" alt=""></figure>
+                            <figure class="image"><img src="http://i2.tiimg.com/703561/6cd5782d2aed6857.jpg" alt=""></figure>
                             <div class="overlay-box">
                                 <ul class="social-icon-colored">
-                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-weibo"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>
+                                    {{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
+                                    <li><a href="https://weibo.com/minor127"><span class="fab fa-weibo"></span></a></li>
+                                    {{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
                                 </ul>
                             </div>
                         </div>
                         <div class="caption-box">
-                            <h6 class="name"><a href="#">@minor</a></h6>
+                            <h6 class="name"><a href="https://weibo.com/minor127">@minor</a></h6>
                             <span class="designation">插画与绘本老师</span>
                         </div>
                     </div>
@@ -688,17 +556,17 @@
                 <div class="team-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="/images/resource/team-2.jpg" alt=""></figure>
+                            <figure class="image"><img src="http://i2.tiimg.com/703561/4143b0280486ce8e.jpg" alt=""></figure>
                             <div class="overlay-box">
                                 <ul class="social-icon-colored">
-                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-weibo"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>
+                                    {{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
+                                    <li><a href="https://weibo.com/minorart"><span class="fab fa-weibo"></span></a></li>
+                                    {{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
                                 </ul>
                             </div>
                         </div>
                         <div class="caption-box">
-                            <h6 class="name"><a href="#">@guoguo</a></h6>
+                            <h6 class="name"><a href="https://weibo.com/minorart">@guoguo</a></h6>
                             <span class="designation">班主任老师</span>
                         </div>
                     </div>
@@ -708,17 +576,17 @@
                 <div class="team-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="/images/resource/team-3.jpg" alt=""></figure>
+                            <figure class="image"><img src="http://i2.tiimg.com/703561/6778ac334cb745c8.jpg" alt=""></figure>
                             <div class="overlay-box">
                                 <ul class="social-icon-colored">
-                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-weibo"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>
+                                    {{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
+                                    <li><a href="https://weibo.com/p/1005056682328884"><span class="fab fa-weibo"></span></a></li>
+                                    {{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
                                 </ul>
                             </div>
                         </div>
                         <div class="caption-box">
-                            <h6 class="name"><a href="#">@flyer</a></h6>
+                            <h6 class="name"><a href="https://weibo.com/p/1005056682328884">@flyer</a></h6>
                             <span class="designation">技术老师</span>
                         </div>
                     </div>
@@ -728,17 +596,17 @@
                 <div class="team-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="/images/resource/team-4.jpg" alt=""></figure>
+                            <figure class="image"><img src="http://i2.tiimg.com/703561/05312632fb36cb64.jpg" alt=""></figure>
                             <div class="overlay-box">
                                 <ul class="social-icon-colored">
-                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-weibo"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>
+                                    {{--                                    <li><a href="#"><span class="fab fa-weixin"></span></a></li>--}}
+                                    <li><a href="https://weibo.com/u/5995932024"><span class="fab fa-weibo"></span></a></li>
+                                    {{--                                    <li><a href="#"><span class="fab fa-qq"></span></a></li>--}}
                                 </ul>
                             </div>
                         </div>
                         <div class="caption-box">
-                            <h6 class="name"><a href="#">@saige</a></h6>
+                            <h6 class="name"><a href="https://weibo.com/u/5995932024">@saige</a></h6>
                             <span class="designation">运营老师</span>
                         </div>
                     </div>
@@ -845,7 +713,7 @@
                         var title = '美萌绘本馆<span style="font-size:11px;color:#F00;">门票价格:89</span>',
                             content = [];
                         content.push("<img src='http://tpc.googlesyndication.com/simgad/5843493769827749134'>地址：北京市朝阳区酒仙桥北路4号798艺术区极地国际创新中心303室");
-                        content.push("电话：159-1038-1201");
+                        content.push("电话：191-1037-5125");
                         content.push("<a href='http://www.iminor.art/about.html'>详细信息</a>");
                         var infoWindow = new AMap.InfoWindow({
                             isCustom: true,  //使用自定义窗体
@@ -900,7 +768,7 @@
                     </script>
 
                 </div>
-                <div class="caption-box"><h3>任何问题请电话咨询：159 1038 1201</h3></div>
+                <div class="caption-box"><h3>任何问题请电话咨询：191 1037 5125</h3></div>
             </div>
 
         </div>
@@ -926,10 +794,10 @@
                             <div class="lower-content">
                                 <ul class="post-info">
                                     <li><span class="fa fa-calendar-alt"></span><a href="news-single.html">{{$new->created_at}}</a></li>
-                                    <li><span class="fa fa-comments"></span><a href="news-single.html">3 条评论</a></li>
+                                    <li><span class="fa fa-comments"></span><a href="news-single.html">{{$new->comments_count}} 条评论</a></li>
                                 </ul>
                                 <h3><a href="/news/{{$new->id}}">{{$new->newstitle}}</a></h3>
-                                <div class="text">{{\Str::limit($new->newscontent, 75, '...')}}</div>
+                                <div class="text">{!! \Str::limit($new->newscontent, 75, '...') !!}</div>
                                 <div class="btn-box"><a href="/news/10" class="theme-btn btn-style-one">MORE</a></div>
                             </div>
                         </div>
@@ -989,7 +857,7 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
                                     <div class="logo">
-                                        <a href="index.html"><img src="/images/footer-logo.png" alt="" /></a>
+                                        <a href="/"><img src="http://i1.fuimg.com/703561/9272ad9d4950c81f.png" alt="" /></a>
                                     </div>
                                     <div class="text">美萌创艺工作室，一个创造美与萌的神奇工作室，在这里和我们一起畅想……</div>
 
@@ -1002,7 +870,7 @@
                                     <h4 class="widget-title">联系我们</h4>
                                     <div class="widget-content">
                                         <ul class="contact-info">
-                                            <li><a href="tel:15910381201"><span class="fa fa-phone-square"></span>159 1038 1201</a></li>
+                                            <li><a href="tel:19110375125"><span class="fa fa-phone-square"></span>191 1037 5125</a></li>
                                             <li><a href="mailto:739019620@qq.com"><span class="fa fa-envelope"></span>739019620@qq.com</a></li>
                                             <li><span class="fa fa-map"></span> 北京市朝阳区798艺术区极地国际创新中心3楼</li>
                                         </ul>
@@ -1021,12 +889,12 @@
                                     <h4 class="widget-title">快速访问</h4>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="/">主页</a></li>
+                                            <li><a href="/">首页</a></li>
                                             <li><a href="/about">关于</a></li>
-                                            <li><a href="/events">大事记</a></li>
-                                            <li><a href="/programs">公开课</a></li>
+                                            <li><a href="/events">事记</a></li>
+                                            <li><a href="/programs">课程</a></li>
                                             <li><a href="/gallery">画廊</a></li>
-                                            <li><a href="/news">新鲜事儿</a></li>
+                                            <li><a href="/news">新闻</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1037,7 +905,7 @@
                                 <div class="footer-widget activites-widget">
                                     <h4 class="widget-title">活动项目</h4>
                                     <div class="widget-content">
-                                        <img src="/images/resource/o_guoguo.jpeg" alt="">
+                                        <img src="http://i2.tiimg.com/703561/7c73ca90882aedb4.jpg" alt="">
 
                                         {{--                                        <ul class="list">--}}
 {{--                                            <li><a href="#">艺术与插画</a></li>--}}
@@ -1054,7 +922,7 @@
                                 <div class="footer-widget activites-widget">
                                     <h4 class="widget-title">公众号二维码</h4>
                                     <div class="widget-content">
-                                        <img src="/images/resource/minor_gongzhong.jpeg" alt="">
+                                        <img src="http://i2.tiimg.com/703561/67d60a302ec6f957.jpg" alt="">
                                     </div>
                                 </div>
                             </div>

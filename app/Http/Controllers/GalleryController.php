@@ -11,7 +11,7 @@ class GalleryController extends Controller
     public function index()
     {
         //查询所有相册
-        $gals = Gallery::orderBy('created_at','desc')->get();
+        $gals = Gallery::orderBy('created_at','desc')->paginate(6);
 
         return view('gallery/index',compact('gals'));
     }

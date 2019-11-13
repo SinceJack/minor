@@ -11,9 +11,13 @@ class EventController extends Controller
     public function index()
     {
         //所有事件
-        $eves = Event::all();
+        $eves = Event::orderBy('created_at','desc')->paginate(6);
 
-        return view('event/index',compact('eves'));
+        //最新发生的大事儿
+        $first = Event::select('evetitle','evetime')->orderBy('evetime', 'desc')->limit(1)->first();
+
+        //即将到来的事件
+        return view('event/index',compact('eves','first'));
     }
 
     public function show($id)

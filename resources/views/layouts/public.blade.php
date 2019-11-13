@@ -8,8 +8,8 @@
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="http://i2.tiimg.com/703561/9671b127ed5ce3f3.jpg" type="image/x-icon">
+    <link rel="icon" href="http://i2.tiimg.com/703561/9671b127ed5ce3f3.jpg" type="image/x-icon">
 
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,10 +19,9 @@
 </head>
 
 <body>
-
 <div class="page-wrapper">
     <!-- Preloader -->
-    <div class="preloader"></div>
+{{--    <div class="preloader"></div>--}}
 
     <!-- Main Header -->
     <header class="main-header">
@@ -31,10 +30,10 @@
             <div class="auto-container">
                 <div class="nav-outer clearfix">
                     <ul class="info-box clearfix">
-                        <li><a href="tel:15910381201">159 1038 1201 <span class="fa fa-phone-square"></span></a></li>    <li><a href="mailto:739019620@qq.com"><span class="fa fa-envelope"></span>739019620@qq.com</a></li>
+                        <li><a href="tel:19110375125">191 1037 5125 <span class="fa fa-phone-square"></span></a></li>    <li><a href="mailto:739019620@qq.com"><span class="fa fa-envelope"></span>739019620@qq.com</a></li>
                     </ul>
 
-                    <div class="responsive-logo"><a href="index.html"><img src="/images/logo.png" alt="" title="Bebio - Kinder Garten HTML Template"></a></div>
+                    <div class="responsive-logo"><a href="/"><img src="http://i1.fuimg.com/703561/a723f1f12abb2b96.png" alt="" title="Bebio - Kinder Garten HTML Template"></a></div>
 
                     <!-- Main Menu -->
                     <nav class="main-menu navbar-expand-md navbar-light">
@@ -48,13 +47,13 @@
                         {{--  顶部导航  --}}
                         <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="@yield('current1')"><a href="/">主页</a></li>
-                                <li class="@yield('current2')"><a href="/about">关于我们</a></li>
-                                <li class="@yield('current3')"><a href="/events">大事记</a></li>
-                                <li class="@yield('current4')"><a href="/programs">公开课</a></li>
-                                <li class="@yield('current5')"><a href="/gallery">画廊</a></li>
-                                <li class="@yield('current6')"><a href="/news">新鲜事儿</a></li>
-{{--                                <li class="@yield('current7')"><a href="/contact">联系我们</a></li>--}}
+                                <li class="@yield('dropdown')"><a href="/">首页 ❤</a></li>
+                                <li class="@yield('current2')"><a href="/about">关于 ✰</a></li>
+                                <li class="@yield('current3')"><a href="/events">事记 ☾</a></li>
+                                <li class="@yield('current4')"><a href="/programs">课程 ♪</a></li>
+                                <li class="@yield('current5')"><a href="/gallery">画廊 (˘͈ᵕ ˘͈❀)</a></li>
+                                <li class="@yield('current6')"><a href="/news">新闻 ( ᵒ̴̶̷̤໐ᵒ̴̶̷̤ )</a></li>
+                                {{--<li class="dropdown"><a href="/contact">联系我们</a></li>--}}
                             </ul>
                         </div>
 
@@ -79,7 +78,7 @@
 
                     <!--Logo-->
                     <div class="logo-outer">
-                        <div class="logo"><a href="/"><img src="/images/logo.png" alt="" title="Bebio - Kinder Garten HTML Template"></a></div>
+                        <div class="logo"><a href="/"><img src="http://i1.fuimg.com/703561/a723f1f12abb2b96.png" alt="" title="Bebio - Kinder Garten HTML Template"></a></div>
                     </div>
 
                     {{--  社交账号  --}}
@@ -106,13 +105,13 @@
                         <div class="navbar-collapse show collapse clearfix">
                             {{--  顶部导航条2  --}}
                             <ul class="navigation clearfix">
-                                <li class="@yield('current1')"><a href="/">主页</a></li>
-                                <li class="@yield('current2')"><a href="/about">关于我们</a></li>
-                                <li class="@yield('current3')"><a href="/events">大事记</a></li>
-                                <li class="@yield('current4')"><a href="/programs">公开课</a></li>
-                                <li class="@yield('current5')"><a href="/gallery">画廊</a></li>
-                                <li class="@yield('current6')"><a href="/news">新鲜事儿</a></li>
-{{--                                <li class="@yield('current7')"><a href="/contact">联系我们</a></li>--}}
+                                <li class="@yield('dropdown')"><a href="/">首页 ❤</a></li>
+                                <li class="@yield('current2')"><a href="/about">关于 ✰</a></li>
+                                <li class="@yield('current3')"><a href="/events">事记 ☾</a></li>
+                                <li class="@yield('current4')"><a href="/programs">课程 ♪</a></li>
+                                <li class="@yield('current5')"><a href="/gallery">画廊 (˘͈ᵕ ˘͈❀)</a></li>
+                                <li class="@yield('current6')"><a href="/news">新闻 ( ᵒ̴̶̷̤໐ᵒ̴̶̷̤ )</a></li>
+                                {{--<li class="dropdown"><a href="/contact">联系我们</a></li>--}}
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->
@@ -123,7 +122,7 @@
     <!-- End Main Header -->
 
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(/images/background/1.jpg);">
+    <section class="page-title" style="background-image:url('http://i2.tiimg.com/703561/50b3cd644681437b.jpg');">
         <div class="auto-container">
             <div class="inner-container clearfix">
                 <ul class="bread-crumb clearfix">

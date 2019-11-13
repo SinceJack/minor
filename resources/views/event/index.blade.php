@@ -46,10 +46,10 @@
                     </div>
                 @endforeach
             </div>
+            {{$eves->links()}}
         </div>
     </section>
     <!--End Event Section -->
-
 
     <!-- Coming Soon -->
     <section class="coming-soon-section">
@@ -61,12 +61,12 @@
         </div>
         <div class="auto-container">
             <div class="sec-title light text-center">
-                <span class="title">即将到来的活动</span>
-                <h2>还不快来参与</h2>
+                <span class="title">最新发生的大事儿！</span>
+                <h2>{{$first->evetitle}}</h2>
             </div>
 
             <div class="content">
-                <div class="time-counter"><div class="time-countdown clearfix" data-countdown="2019/10/31"></div></div>
+                <div class="time-counter" style="color:white;font-size:30px;color:#ffae00;">{{$first->evetime}}</div>
             </div>
         </div>
     </section>
